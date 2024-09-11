@@ -1,0 +1,15 @@
+import pygame
+pygame.init() 
+width,height = 900,1000
+col = 17,101,185
+screne = pygame.display.set_mode((width, height))
+
+
+done = False
+while not done:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            pygame.quit()
+    screne.fill(col)
+    pygame.display.flip()
+
